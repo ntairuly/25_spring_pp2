@@ -125,7 +125,7 @@ def drawLineBetween(screen, index, start, end, width, color_mode,form):
     aprogress = 1 - progress
     x = int(aprogress * start[0] + progress * end[0])
     y = int(aprogress * start[1] + progress * end[1])
-    #find which form is it and draw it
+    #find which form is it and draw it  
     if form == "circle":
         pygame.draw.circle(screen, color_mode, (x, y), width)
     elif form == "rectangle":
