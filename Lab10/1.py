@@ -9,7 +9,7 @@ conn = psycopg2.connect(
 )
 cur = conn.cursor()
 
-# Создание таблицы
+
 cur.execute("DROP TABLE IF EXISTS PhoneBook;")
 cur.execute("""
     CREATE TABLE PhoneBook(
